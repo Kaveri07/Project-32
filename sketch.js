@@ -132,7 +132,7 @@ async function getbg() {
     var responseJSON = await response.json();
     var datetime = responseJSON.datetime;
     var hour = datetime.slice(11,13);
-    if (hour >= 6 && hour <= 20) {
+    if (hour >= 6 && hour <= 18) {
         bg=color(random(0,255), random(0,255), 0);
     }
     else{
